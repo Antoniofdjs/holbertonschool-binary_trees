@@ -20,7 +20,7 @@ int binary_tree_balance(const binary_tree_t *tree)
 	{
 		if (tree->left == NULL && tree->right == NULL)
 			return (left_height - right_height);
-		return (left_height + 1 - right_height);
+		return (left_height - right_height);
 	}
 	else
 	{
